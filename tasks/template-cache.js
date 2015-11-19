@@ -1,11 +1,7 @@
 module.exports = function(grunt) {
   'use strict';
 
-  var fs   = require("fs");
-  var glob = require("glob");
-  var _    = require("underscore");
-  var q    = require("q");
-
+  var _ = require("underscore");
   grunt.registerMultiTask("template-cache", 'Create a template cache object list',  function() {
     var glob = this.data.glob;
     var cachePath = this.data["cache-out"];
