@@ -1,0 +1,15 @@
+{
+  "name": "grunt-template-cache",
+  "description": "Prepares template cache",
+  "files": [
+    "tasks"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "dependencies": {
+    "glob": "^6.0.1",
+    "q": "^1.4.1",
+    "underscore": "^1.8.3"
+  }
+}
