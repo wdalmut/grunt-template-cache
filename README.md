@@ -14,7 +14,7 @@ grunt.loadNpmTasks('grunt-template-cache');
 "template-cache": {
   "html": {
     "glob": "views/**/*.html",
-    "cache-out": "templates.json",
+    "dest": "templates.json",
   },
 },
 ```
