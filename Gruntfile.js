@@ -10,7 +10,7 @@ module.exports = function(grunt) {
     "template-cache": {
       "html": {
         "glob": "**/*.html",
-        "cache-out": "t.json",
+        "dest": "t.json",
       },
     },
   });

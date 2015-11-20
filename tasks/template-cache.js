@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   var _ = require("underscore");
   grunt.registerMultiTask("template-cache", 'Create a template cache object list',  function() {
     var glob = this.data.glob;
-    var cachePath = this.data["cache-out"];
+    var cachePath = this.data.dest;
 
     var paths = grunt.file.expand({}, glob);
 
