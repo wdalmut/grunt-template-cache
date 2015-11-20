@@ -9,7 +9,11 @@ module.exports = function(grunt) {
     },
     "template-cache": {
       "html": {
-        "glob": "**/*.html",
+        "glob": "fixtures/**/*.html",
+        "dest": "t.json",
+      },
+      "files": {
+        "glob": "fixtures/**/*.html",
         "dest": "t.json",
       },
     },
