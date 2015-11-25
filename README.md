@@ -33,7 +33,7 @@ to filter out you can use the `regex_path_filter`
 
 ```js
   "html": {
-    "glob": "views/**/*.html",
+    "glob": "src/views/**/*.html",
     "dest": "templates.json",
     "regex_path_filter": /^src\//i
   },
