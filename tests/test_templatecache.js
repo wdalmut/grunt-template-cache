@@ -43,5 +43,22 @@ exports.tests = {
       );
       test.done();
     });
+  },
+  compile_templates_filtering_the_view_path: function(test) {
+    test.expect(3);
+    exec('grunt template-cache:filter', execOptions, function(error, stdout) {
+      test.equal(
+        stdout.indexOf('Template cache ready at path: t.json') > -1,
+        true,
+        'Files are not cached'
+      );
+      var content = fs.readFileSync(__dirname + "/../t.json");
+      content = JSON.parse(content);
+
+      test.equal((content.hasOwnProperty("home.html")), true, '');
+      test.equal((content.hasOwnProperty("nav/nav.html")), true, '');
+
+      test.done();
+    });
   }
 };

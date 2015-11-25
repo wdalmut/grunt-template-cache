@@ -16,6 +16,11 @@ module.exports = function(grunt) {
         "glob": "fixtures/**/*.html",
         "dest": "t.json",
       },
+      "filter": {
+        "glob": "fixtures/**/*.html",
+        "dest": "t.json",
+        "regex_path_filter": /^fixtures\//i
+      },
     },
   });
 
